@@ -1,0 +1,19 @@
+//nestedMapping
+pragma solidity ^0.8.15;
+//SPDX-License-Identifier:unlicense
+contract NestedMapping{
+//     mapping(uint => mapping( string=> uint)) IdentityCard;
+//     function setmapping(uint familyNumber, string memory name, uint familymembernumber) public{
+//        IdentityCard[familyNumber][name] = familymembernumber;
+//     } 
+// function getmapping(uint familyNumber,string memory name) public view returns(uint familymembernumber) {
+//  return IdentityCard[familyNumber][name];
+// }
+
+   mapping(string => mapping( string=> uint)) IdentityCard;
+    function setmapping(string memory familyNumber, string memory name, uint familymembernumber) public{
+       IdentityCard[familyNumber][name] = familymembernumber;
+    } 
+function getmapping(string memory familyNumber,string memory name) public view returns(uint familymembernumber) {
+ return IdentityCard[familyNumber][name];
+}
