@@ -1,0 +1,72 @@
+pragma solidity ^0.8.15;
+//SPDX-License-Identifier:unlicense
+contract Tasks{
+    // function hello() public pure returns(string memory){
+    //     return "Hello Solidity";
+    // }
+// int a;
+// constructor() {
+//     a=10;
+// }
+// function returnstatevariable() public view returns(int){
+// return a;
+// }
+
+// function localvariable() public pure returns(uint){
+// uint a = 19;
+// return a;
+// }
+
+// int b;
+
+// function setlocalvariable(int _b) public {
+//  b = _b;
+// }
+// function getLocalVariable() public view returns(int){
+// }
+
+// function evaluate(int a,int b) public view returns(int){
+//     return (a+b) - (a-b);
+// }
+
+// function remainder(int c) public pure returns(int){
+//     require(c>0,"error");
+// return c%3;
+// }
+
+// function number(int a, int b ,int c) public pure returns(int){
+//     int n;
+//     return n = a + b + c;
+// }
+
+// function sum(uint num) public pure returns() {
+// while(quotient>0){
+//     uint number = num % 10;
+// }
+// }
+
+int[] array1;
+function Arrays(int arrayInput) public{
+    array1.push(arrayInput);
+}
+function getarray() public view returns(int[] memory) {
+    return array1;
+}
+function arraysadd() public returns(int[] memory){
+    int i;
+    for(i=4;i<10;i++){
+        array1[i]= array1[i-1] + array1[i-2] + array1[i-3];
+
+    }
+return array1;
+}
+// function arraysadd(int n) public returns(int[] memory){
+//     int i;
+//     for(i=4;i<n;i++){
+//         array1[i]= array1[i-1] + array1[i-2] + array1[i-3];
+
+//     }
+// return array1[n];
+// }
+
+}
